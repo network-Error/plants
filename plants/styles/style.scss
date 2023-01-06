@@ -13,6 +13,8 @@ $grey: #636060;
 $bg-section: #EDF2EC;
 $black-links: #010201;
 
+$second-3: .3s;
+
 // Base settings
 * {
     box-sizing: border-box;
@@ -21,6 +23,7 @@ $black-links: #010201;
     font-size: $fs-20;
     color: $grey;
     font-weight: 400;
+    font-family: 'Inika', serif;
 }
 
 .container {
@@ -36,23 +39,41 @@ ul {
     list-style: none;
 }
 
+button {
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 // Styles
 
+// ** Header ** //
 .header {
     background-color: $bg-section;
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
     padding: 42px 0;
     align-items: center;
+    gap: 702px;
 }
 
 .nav__logo {
     color: black;
     font-size: 16px;
     line-height: 21px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -2px;
 }
 
 .nav__list {
@@ -69,4 +90,84 @@ ul {
 .active-link {
     color: $orange;
     font-weight: 700;
+}
+
+// ** Welcome ** //
+.welcome {
+    background-color: $bg-section;
+    padding-bottom: 94px;
+}
+
+.welcome__wrapper {
+    display: flex;
+    gap: 224.2px;
+}
+
+.welcome__leafs {
+    background-image: url('../assets/png/leafs.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 462px;
+    height: 424px;
+    position: relative;
+    top: 54px;
+    left: -6px;
+}
+
+.welcome__text {
+    width: 549px;
+    margin-top: 99px;
+}
+
+.welcome__header {
+    font-weight: 700;
+    color: $light-grey;
+    line-height: 50px;
+    font-size: $fs-45;
+    margin-bottom: 42px;
+    position: relative;
+    left: -9px;
+
+    &_green {
+        color: $green;
+    }
+}
+
+.welcome__sub-header {
+    line-height: 35px;
+    margin-bottom: 48px;
+    width: 525px;
+    position: relative;
+    top: 0;
+    left: -8px;
+}
+
+.btn {
+    width: 158px;
+    height: 44px;
+    background-color: initial;
+    border: 2px solid $orange;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: $second-3;
+    -webkit-transition: $second-3;
+    -moz-transition: $second-3;
+    -ms-transition: $second-3;
+    -o-transition: $second-3;
+    font-size: $fs-16;
+}
+
+.btn_welcome {
+    position: relative;
+    top: 0;
+    left: -7px;
+}
+
+.btn:hover {
+    background-color: $orange;
+    color: white;
 }
