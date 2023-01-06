@@ -171,3 +171,46 @@ h6 {
     background-color: $orange;
     color: white;
 }
+
+// ** About ** //
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 93px;
+    padding-bottom: 94px;
+    align-items: center;
+}
+
+.about__description {
+    width: 605px;
+    height: 350px;
+}
+
+.about__header {
+    font-size: $fs-40;
+    line-height: 52px;
+    color: $green;
+    margin-bottom: 40px;
+    width: 463px;
+    position: relative;
+    top: 1px;
+    left: -1px;
+}
+
+.about__header_orange {
+    color: $orange;
+}
+
+.about__sub-header {
+    line-height: 30px;
+}
+
+.about__picture {
+    background-image: url('../assets/png/houseplant.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 464px;
+    height: 479px;
+}
