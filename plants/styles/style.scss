@@ -17,6 +17,9 @@ $bg-section-green: #D6E7D2;
 
 $second-3: .3s;
 
+$ff-inter: 'Inter', sans-serif;
+$ff-inika: 'Inika', serif;
+
 // Base settings
 * {
     box-sizing: border-box;
@@ -25,7 +28,7 @@ $second-3: .3s;
     font-size: $fs-20;
     color: $grey;
     font-weight: 400;
-    font-family: 'Inika', serif;
+    font-family: $ff-inika;
 }
 
 .container {
@@ -113,8 +116,8 @@ h6 {
     width: 462px;
     height: 424px;
     position: relative;
-    top: 54px;
-    left: -6px;
+    top: 52px;
+    left: -3px;
 }
 
 .welcome__text {
@@ -128,11 +131,14 @@ h6 {
     line-height: 50px;
     font-size: $fs-45;
     margin-bottom: 42px;
-    position: relative;
-    left: -9px;
+    font-family: $ff-inter;
+    width: 549px;
 
     &_green {
+        font-family: $ff-inter;
         color: $green;
+        font-size: $fs-45;
+        line-height: 50px;
     }
 }
 
@@ -140,9 +146,7 @@ h6 {
     line-height: 35px;
     margin-bottom: 48px;
     width: 525px;
-    position: relative;
-    top: 0;
-    left: -8px;
+    font-family: $ff-inter;
 }
 
 .btn {
@@ -166,7 +170,8 @@ h6 {
 .btn_welcome {
     position: relative;
     top: 0;
-    left: -7px;
+    left: 1px;
+    font-family: $ff-inter;
 }
 
 .btn:hover {
@@ -206,6 +211,10 @@ h6 {
 
 .about__sub-header {
     line-height: 30px;
+    font-family: $ff-inter;
+    position: relative;
+    top: 0;
+    left: -2px;
 }
 
 .about__picture {
@@ -265,6 +274,9 @@ h6 {
     line-height: 26px;
     width: 161px;
     height: 50px;
+    position: relative;
+    top: -1px;
+    left: -1px;
 }
 
 .service__cards {
@@ -334,16 +346,21 @@ h6 {
     line-height: 20px;
     color: $orange;
     margin-bottom: 10px;
+    font-family: $ff-inter;
+    position: relative;
+    top: -2px;
+    left: -2px;
 }
 
 .service__card-sub-header {
+    font-family: $ff-inter;
     font-size: $fs-16;
     line-height: 20px;
     color: $light-grey;
     margin-bottom: 36px;
     position: relative;
-    top: 4px;
-    left: -4px;
+    top: 2px;
+    left: -2px;
 }
 
 .border-wrapper {
@@ -375,6 +392,10 @@ h6 {
     line-height: 48px;
     color: black;
     margin-bottom: 60px;
+    font-family: $ff-inter;
+    position: relative;
+    top: 0;
+    left: -2px;
 }
 
 .prices__plan {
@@ -404,6 +425,10 @@ h6 {
     color: black;
     font-weight: 700;
     padding-left: 33px;
+    font-family: $ff-inter;
+    position: relative;
+    top: 0;
+    left: -1px;
 }
 
 .prices__header {
@@ -413,6 +438,10 @@ h6 {
     color: black;
     width: 452px;
     margin-bottom: 38px;
+    font-family: $ff-inter;
+    position: relative;
+    top: 0;
+    left: -4px;
 }
 
 .prices__header_green {
@@ -420,6 +449,7 @@ h6 {
     font-size: $fs-40;
     line-height: 50px;
     font-weight: 700;
+    font-family: $ff-inter;
 }
 
 .btn_prices {
@@ -489,4 +519,48 @@ h6 {
     letter-spacing: .05em;
     color: $light-grey;
     margin-top: 86px;
+}
+
+// ** Footer ** //
+
+.footer__wrapper {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 0;
+    left: -1px;
+}
+
+.footer__symbol-copyright,
+.footer__year,
+.footer__github,
+.footer__name {
+    line-height: 50px;
+    color: black;
+    font-family: $ff-inter;
+    
+}
+
+.footer__items {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__name {
+    position: relative;
+    top: 1px;
+    left: 9px;
+}
+
+.footer__social {
+    position: relative;
+    top: 3px;
+    left: 1px;
 }
