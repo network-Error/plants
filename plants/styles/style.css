@@ -413,4 +413,50 @@ h6 {
   left: 6px;
 }
 
+.contacts {
+  background-color: #EDF2EC;
+}
+
+.contacts__wrapper {
+  padding-top: 53px;
+  display: flex;
+}
+
+.contacts__picture {
+  background-image: url("../assets/png/woman.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 497px;
+  margin-right: 113px;
+  position: relative;
+  top: -9px;
+  left: -2px;
+}
+
+.contacts__header {
+  margin-right: 64px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+
+.contacts__items {
+  width: 450px;
+  height: 50px;
+  background-color: #D6E7D2;
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #717171;
+  margin-top: 86px;
+}
+
 /*# sourceMappingURL=style.css.map */

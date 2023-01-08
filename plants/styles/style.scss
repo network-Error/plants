@@ -13,6 +13,7 @@ $grey: #636060;
 $smoke-grey: #E3E1D5;
 $bg-section: #EDF2EC;
 $black-links: #010201;
+$bg-section-green: #D6E7D2;
 
 $second-3: .3s;
 
@@ -440,4 +441,52 @@ h6 {
     position: relative;
     top: -3px;
     left: 6px;
+}
+
+// ** Contacts ** //
+
+.contacts {
+    background-color: $bg-section;
+}
+
+.contacts__wrapper {
+    padding-top: 53px;
+    display: flex;
+}
+
+.contacts__picture {
+    background-image: url('../assets/png/woman.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 497px;
+    margin-right: 113px;
+    position: relative;
+    top: -9px;
+    left: -2px;
+}
+
+.contacts__header {
+    margin-right: 64px;
+    font-weight: 700;
+    font-size: $fs-40;
+    line-height: 52px;
+    color: $green;
+    position: relative;
+    top: -2px;
+    left: -2px;
+}
+
+.contacts__items {
+    width: 450px;
+    height: 50px;
+    background-color: $bg-section-green;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    padding-left: 20px;
+    line-height: 40px;
+    letter-spacing: .05em;
+    color: $light-grey;
+    margin-top: 86px;
 }
