@@ -328,4 +328,89 @@ h6 {
   -o-border-radius: 0 0 20px 20px;
 }
 
+.prices__wrapper {
+  padding-top: 38px;
+  display: flex;
+  gap: 438px;
+  margin-bottom: 115px;
+}
+
+.prices__call {
+  text-align: right;
+}
+
+.prices__heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: black;
+  margin-bottom: 60px;
+}
+
+.prices__plan {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 34px 41px;
+}
+
+.prices__items {
+  width: 250px;
+  height: 50px;
+  background-color: #EDF2EC;
+  border-color: inherit;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  line-height: 20px;
+  color: black;
+  font-weight: 700;
+  padding-left: 33px;
+}
+
+.prices__header {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: black;
+  width: 452px;
+  margin-bottom: 38px;
+}
+
+.prices__header_green {
+  color: #499A18;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.btn_prices {
+  font-weight: 700;
+  margin-bottom: 39px;
+  position: relative;
+  top: 2px;
+  left: -6px;
+}
+
+.prices__leafs {
+  background-image: url("../assets/png/leafs2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 166px;
+  height: 187px;
+  margin: auto 0 auto auto;
+  position: relative;
+  top: -3px;
+  left: 6px;
+}
+
 /*# sourceMappingURL=style.css.map */
