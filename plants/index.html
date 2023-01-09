@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
+            <nav id="nav" class="nav">
                 <a href="#" class="nav__logo">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.52667 20.9466L10.9212 3.66409C10.9212 3.66409 3.57596 7.00909 2.00199 10.9116C0.428017 14.8141 0.927102 18.4038 2.00201 20.9466" stroke="#499A18" stroke-linecap="round" stroke-linejoin="round"/>
@@ -21,26 +21,26 @@
                 </a>
                 <ul class="nav__list">
                     <li class="nav__items">
-                        <a href="#" class="nav__item active-link">Home</a>
+                        <a href="#nav" class="nav__item active-link">Home</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__item">About us</a>
+                        <a href="#about" class="nav__item">About us</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__item">Service</a>
+                        <a href="#service" class="nav__item">Service</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__item">Price</a>
+                        <a href="#price" class="nav__item">Price</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__item">Contacts</a>
+                        <a href="#contacts" class="nav__item">Contacts</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
-        <section class="welcome">
+        <section id="welcome" class="welcome">
             <div class="container">
                 <div class="welcome__wrapper">
                     <div class="welcome__leafs"></div>
@@ -55,7 +55,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="about__wrapper">
                     <div class="about__description">
@@ -67,13 +67,13 @@
             </div>
         </section>
 
-        <section class="service">
+        <section id="service" class="service">
             <div class="container">
                 <div class="service__wrapper">
                     <div class="service__content">
                         <h2 class="service__header">Service and our projects</h2>
                         <div class="service__buttons">
-                            <button class="btn btn_service">Gardens</button>
+                            <button class="btn btn_service active-service">Gardens</button>
                             <button class="btn btn_service">Lawn</button>
                             <button class="btn btn_service">Planting</button>
                         </div>
@@ -126,7 +126,7 @@
             </div>
         </section>
 
-        <section class="prices">
+        <section id="price" class="prices">
             <div class="container">
                 <div class="prices__wrapper">
                     <div class="prices__price">
@@ -158,7 +158,7 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section id="contacts" class="contacts">
             <div class="container">
                 <div class="contacts__wrapper">
                     <div class="contacts__picture"></div>

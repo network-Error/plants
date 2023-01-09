@@ -90,6 +90,15 @@ h6 {
     color: $black-links;
     line-height: 50px;
     font-size: $fs-16;
+    transition: $second-3;
+    -webkit-transition: $second-3;
+    -moz-transition: $second-3;
+    -ms-transition: $second-3;
+    -o-transition: $second-3;
+}
+
+.nav__item:hover {
+    color: $orange;
 }
 
 .active-link {
@@ -165,6 +174,7 @@ h6 {
     -ms-transition: $second-3;
     -o-transition: $second-3;
     font-size: $fs-16;
+    cursor: pointer;
 }
 
 .btn_welcome {
@@ -371,6 +381,11 @@ h6 {
     -moz-border-radius: 0 0 20px 20px;
     -ms-border-radius: 0 0 20px 20px;
     -o-border-radius: 0 0 20px 20px;
+}
+
+.active-service {
+    background-color: $orange;
+    color: white;
 }
 
 // ** Prices ** //
