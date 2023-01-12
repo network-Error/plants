@@ -750,6 +750,16 @@ h6 {
     height: 450px;
   }
 
+  .service__picture {
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .service__card-header,
+.service__card-sub-header {
+    top: 1px;
+    left: -1px;
+  }
+
   .service__card-sub-header {
     width: 210px;
     margin: 0 auto 20px;
