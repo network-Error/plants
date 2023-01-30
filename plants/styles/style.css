@@ -35,6 +35,11 @@ h6 {
   margin: 0;
 }
 
+.blur-card {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
 .header {
   background-color: #EDF2EC;
 }
@@ -477,6 +482,201 @@ body._touch .burger__link {
   left: 6px;
 }
 
+.prices__price {
+  position: relative;
+}
+
+.dropdown {
+  width: 250px;
+  height: 50px;
+  background: #EDF2EC;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  position: relative;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  z-index: 999;
+  width: 12px;
+  height: 12px;
+  border: 2px solid grey;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  pointer-events: none;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.dropdown input {
+  width: 100%;
+  height: 100%;
+  background-color: #EDF2EC;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  padding-left: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.dropdown-basic-input::placeholder,
+.dropdown-standard-input::placeholder,
+.dropdown-pro-care::placeholder {
+  color: black;
+}
+
+.dropdown .options {
+  width: 100%;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  padding: 8px;
+  cursor: pointer;
+  background: inherit;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  position: absolute;
+  top: 54px;
+  left: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  opacity: 0;
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+  visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 10000;
+}
+
+.dropdown .options .option {
+  padding: 16px;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  color: #292d34;
+}
+
+.dropdown .options .option:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.dropdown .options .option:hover {
+  color: #499A18;
+  background: #5BC5FA;
+  box-shadow: 0 10px 25px rgba(42, 179, 248, 0.4);
+}
+
+.dropdown.opened .options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.dropdown.opened::before {
+  transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  -o-transform: rotate(-225deg);
+  top: 21px;
+}
+
+.option__header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.option__text {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #717171;
+  border-top: 0.5px solid #AEA1A1;
+  padding-top: 6px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 6px;
+}
+
+.option__sub-text {
+  font-size: 12px;
+  line-height: 20px;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.option__sub-text span {
+  color: #E06733;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.option__sub-text span:nth-child(1) {
+  font-size: 12px;
+}
+
+.option__btn {
+  width: 86px;
+  height: 25px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #717171;
+}
+
 .contacts {
   background-color: #EDF2EC;
 }
@@ -521,6 +721,97 @@ body._touch .burger__link {
   letter-spacing: 0.05em;
   color: #717171;
   margin-top: 86px;
+}
+
+.options-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  top: 52px;
+}
+
+.option-contacts {
+  font-family: "Inter", sans-serif;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #499A18;
+  border-bottom: 1px solid #D9D9D9;
+  padding: 0 35px;
+}
+
+.contacts__address {
+  margin-top: 120px;
+  width: 448px;
+}
+
+.address__canandaigua,
+.address__ny,
+.address__yonkers,
+.address__sherrill {
+  border: 1px solid black;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: none;
+}
+
+.address__canandaigua-wrapper,
+.address__ny-wrapper,
+.address__yonkers-wrapper,
+.address__sherrill-wrapper {
+  padding: 17px 32px 33px;
+  display: flex;
+  flex-direction: column;
+}
+
+.address__first-name {
+  font-family: "Inter", sans-serif;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: black;
+}
+
+.address__first-name span {
+  font-family: "Inter", sans-serif;
+}
+
+.address__btn {
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 700;
+  width: 122px;
+  height: 26px;
+  margin: 24px auto 0;
+  background-color: #EDF2EC;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.address__btn:hover {
+  background-color: #E06733;
+}
+
+.option-contacts:hover {
+  color: #717171;
+  border-color: #717171;
+}
+
+.contacts__items .dropdown-contacts-input {
+  color: #717171;
+  font-weight: 400;
+}
+
+.cg-color-input {
+  background-color: #C1E698;
+  color: #717171;
 }
 
 .footer__wrapper {
