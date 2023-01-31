@@ -860,6 +860,11 @@ body._touch .burger__link {
 .contacts__items .dropdown-contacts-input {
     color: $light-grey;
     font-weight: 400;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
 .cg-color-input {

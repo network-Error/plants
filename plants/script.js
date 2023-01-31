@@ -297,3 +297,11 @@ dropdown.addEventListener('click', toggleDropdown);
 dropdownStandard.addEventListener('click', toggleDropdownStandard);
 dropdownProCare.addEventListener('click', toggleDropdownProCare);
 dropdownContacts.addEventListener('click', toggleDropdownContacts);
+
+const OPTION_BTN = document.querySelectorAll('.option__btn');
+
+for (let i = 0; i < OPTION_BTN.length; i++) {
+    OPTION_BTN[i].addEventListener('click', (e) => {
+        location.href = 'index.html#contacts';
+    })
+}
