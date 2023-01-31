@@ -36,6 +36,31 @@
                         <a href="#contacts" class="nav__item">Contacts</a>
                     </li>
                 </ul>
+
+                <div class="burger">
+                    <div class="burger__icon">
+                        <span></span>
+                    </div>
+                    <nav class="burger__body">
+                        <ul class="burger__list">
+                            <li class="burger__item">
+                                <a data-goto=".nav" href="#" class="burger__link">Home</a>
+                            </li>
+                            <li class="burger__item">
+                                <a data-goto=".about" href="#" class="burger__link">About us</a>
+                            </li>
+                            <li class="burger__item">
+                                <a data-goto=".service" href="#" class="burger__link">Service</a>
+                            </li>
+                            <li class="burger__item">
+                                <a data-goto=".price" href="#" class="burger__link">Price</a>
+                            </li>
+                            <li class="burger__item">
+                                <a data-goto="contacts" href="#" class="burger__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </nav>
         </div>
     </header>
@@ -73,7 +98,7 @@
                     <div class="service__content">
                         <h2 class="service__header">Service and our projects</h2>
                         <div class="service__buttons">
-                            <button class="btn btn_service active-service">Gardens</button>
+                            <button class="btn btn_service">Gardens</button>
                             <button class="btn btn_service">Lawn</button>
                             <button class="btn btn_service">Planting</button>
                         </div>
@@ -130,23 +155,41 @@
             <div class="container">
                 <div class="prices__wrapper">
                     <div class="prices__price">
-                        <h3 class="prices__heading">Prices</h3>
+                        <h3 class="prices__heading">Prices<h3>               
                         <div class="prices__plan">
-                            <select class="prices__items">
-                                <option value="basic">Basics</option>
-                                <option value="basic2">Basics 2</option>
-                                <option value="basic3">Basics 3</option>
-                            </select>
-                            <select class="prices__items">
-                                <option value="standard">Standard</option>
-                                <option value="standard2">Standard 2</option>
-                                <option value="standard3">Standard 3</option>
-                            </select>
-                            <select class="prices__items">
-                                <option value="procare">Pro care</option>
-                                <option value="procare2">Pro care 2</option>
-                                <option value="procare3">Pro care 3</option>
-                            </select>
+                            <div class="dropdown dropdown-basic">
+                                <input class="dropdown-input dropdown-basic-input" type="text" placeholder="Basics" readonly>
+                                <ul class="options options-basic">
+                                    <li class="option option-basic">
+                                        <h4 class="option__header">Basics</h4>
+                                        <p class="option__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                        <p class="option__sub-text"><span>$</span><span>15</span> / per hour</p>
+                                        <button class="option__btn">Order</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown dropdown-standard">
+                                <input class="dropdown-input dropdown-standard-input" type="text" placeholder="Standard" readonly>
+                                <ul class="options options-standard">
+                                    <li class="option option-standard">
+                                        <h4 class="option__header">Standard</h4>
+                                        <p class="option__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                        <p class="option__sub-text"><span>$</span><span>25</span> / per hour</p>
+                                        <button class="option__btn">Order</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown dropdown-pro-care">
+                                <input class="dropdown-input dropdown-pro-care" type="text" placeholder="Pro care" readonly>
+                                <ul class="options options-pro-care">
+                                    <li class="option option-pro-care">
+                                        <h4 class="option__header">Pro care</h4>
+                                        <p class="option__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                        <p class="option__sub-text"><span>$</span><span>35</span> / per hour</p>
+                                        <button class="option__btn">Order</button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="prices__call">
@@ -163,11 +206,50 @@
                 <div class="contacts__wrapper">
                     <div class="contacts__picture"></div>
                     <h2 class="contacts__header">Contact us</h2>
-                    <select class="contacts__items">
-                        <option value="city">City</option>
-                        <option value="city1">City 1</option>
-                        <option value="city2">City 2</option>
-                    </select>
+                    <div class="dropdown dropdown-contacts contacts__items">
+                        <input id="city" type="text" class="dropdown-input dropdown-contacts-input" placeholder="City" readonly value="">
+                        <ul class="options options-contacts ">
+                            <li class="option-contacts">Canandaigua, NY</li>
+                            <li class="option-contacts">New York City</li>
+                            <li class="option-contacts">Yonkers, NY</li>
+                            <li class="option-contacts">Sherrill, NY</li>
+                        </ul>
+
+                        <div class="contacts__address">
+                            <div class="address__canandaigua">
+                                <div class="address__canandaigua-wrapper">
+                                    <p class="address__first-name">City: <span>Canandaigua, NY</span></p>
+                                    <p class="address__first-name">Phone: <span>+1 585 393 0001</span></p>
+                                    <p class="address__first-name">Office address: <span>151 Charlotte Street</span></p>
+                                    <a class="address__btn" href="tel:+15853930001">Call us</a>
+                                </div>
+                            </div>
+                            <div class="address__ny">
+                                <div class="address__ny-wrapper">
+                                    <p class="address__first-name">City: <span>New York City</span></p>
+                                    <p class="address__first-name">Phone: <span>+1 212 456 0002<a/span></p>
+                                    <p class="address__first-name">Office address: <span>9 East 91st Street</span></p>
+                                    <a class="address__btn" href="tel:+12124560003">Call us</a>
+                                </div>
+                            </div>
+                            <div class="address__yonkers">
+                                <div class="address__yonkers-wrapper">
+                                    <p class="address__first-name">City: <span>Yonkers, NY</span></p>
+                                    <p class="address__first-name">Phone: <span>+1 914 678 0003</span></p>
+                                    <p class="address__first-name">Office address: <span>511 Warburton Ave</span></p>
+                                    <a class="address__btn" href="tel:+19146780003">Call us</a>
+                                </div>
+                            </div>
+                            <div class="address__sherrill">
+                                <div class="address__sherrill-wrapper">
+                                    <p class="address__first-name">City: <span>Sherrill, NY</span></p>
+                                    <p class="address__first-name">Phone: <span>+1 314 908 0004</span></p>
+                                    <p class="address__first-name">Office address: <span>14 WEST Noyes BLVD</span></p>
+                                    <a class="address__btn" href="tel:+13149080004">Call us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
