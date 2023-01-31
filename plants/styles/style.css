@@ -1536,6 +1536,30 @@ body._touch .burger__link {
     left: -2px;
   }
 
+  .contacts__address {
+    position: relative;
+    left: -20px;
+    width: 310px;
+    margin-top: 80px;
+  }
+
+  .address__canandaigua-wrapper,
+.address__ny-wrapper,
+.address__yonkers-wrapper,
+.address__sherrill-wrapper {
+    padding: 15px 20px;
+  }
+
+  .address__first-name,
+.address__first-name span {
+    line-height: 30px;
+    font-size: 12px;
+  }
+
+  .contacts__items {
+    margin-bottom: 280px;
+  }
+
   .footer__symbol-copyright,
 .footer__year,
 .footer__github {
